@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+body {
+  text-transform: uppercase;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  width: 1200px;
+  line-height: 26px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 5px 0 #34495e;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.header {
+  background-color: white;
+}
+
+.header__nav {
+  width: 1056px;
+  margin: 0 auto;
+  min-height: 56px;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-height: 56px;
+  justify-content: space-around;
+}
+
+.nav__item {
+  position: relative;
+  max-height: 56px;
+}
+
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+.nav__link:hover {
+  color: #81b3d2;
+}
+
+.nav__link:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PROMO */
+
+.main__promo {
+  margin-bottom: 57px;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  width: 450px;
+  margin: 55px auto 39px;
+}
+
+.promo__description {
+  text-align: center;
+  color: #333333;
+}
+
+/* PROMO REASONS */
+
+.main__reasons {
+  display: flex;
+}
+
+.info__block {
+  line-height: 21px;
+  background-color: #81b3d2;
+  text-align: center;
+  color: white;
+}
+
+.block__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 256px;
+  margin: 0;
+  justify-content: center;
+}
+
+.block__title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.block__desc {
+  margin-bottom: 40px;
+  padding: 0 15%;
+}
+
+.info__img {
+  height: 256px;
+  width: 800px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.info-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.row-gray {
+  background-color: #eeeeee;
+}
